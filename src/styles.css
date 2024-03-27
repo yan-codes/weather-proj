@@ -71,22 +71,25 @@ main {
   color: #f65282;
 }
 
-.current-temperature-icon {
-  position: relative;
-  top: -8px;
-  font-size: 40px;
-  margin-right: 5px;
+.temperature-container {
+  display: flex;
 }
 
-.current-temperature-value {
-  font-size: 80px;
+.weather-app-icon {
+  width: 88px;
+  height: 88px;
+}
+
+.current-temperature {
+  font-size: 88px;
+  margin-left: 10px;
+  line-height: 88px;
   font-weight: bold;
 }
 
 .current-temperature-unit {
   font-size: 28px;
-  position: relative;
-  top: -38px;
+  margin-top: 6px;
 }
 
 footer {
