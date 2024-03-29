@@ -113,10 +113,8 @@ main {
   margin-top: 30px;
   justify-content: space-around;
   margin-bottom: 70px;
-  background-color: #f9f7fe;
   padding: 10px 2px;
-  opacity: 0.8;
-  border: 1px solid #36b7be;
+  border: 3px solid #36b7be;
   border-radius: 12px;
 }
 
@@ -130,11 +128,12 @@ main {
   line-height: 20px;
   margin-bottom: 10px;
   font-size: 14px;
+  font-weight: 700;
 }
 
 .weather-forecast-icon {
-  width: 65px;
-  height: 65px;
+  width: 70px;
+  height: 70px;
   display: block;
   margin: 0 auto;
 }
