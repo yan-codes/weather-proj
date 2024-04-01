@@ -14,58 +14,61 @@
     <title>My weather application</title>
   </head>
   <body>
-    <div class="weather-app">
-      <header>
-        <form id="search-form">
-          <input
-            type="search"
-            placeholder="Enter a city.."
-            required
-            class="search-input"
-            id="search-input"
-          />
-          <input type="submit" value="Search" class="search-button" />
-        </form>
-      </header>
-      <main>
-        <div class="current-weather">
-          <div>
-            <h1 class="current-city" id="current-city">Manila</h1>
-            <p class="current-details">
-              <span id="time"></span>, <span id="description"></span>
-              <br />
-              Humidity: <strong id="humidity"></strong>, Wind:
-              <strong id="wind-speed"></strong>
-            </p>
-          </div>
-          <div class="temperature-container">
-            <div id="icon">
-              <img
-                src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
-                class="weather-app-icon"
-              />
+    <div>
+      <div class="weather-app">
+        <header>
+          <form id="search-form">
+            <input
+              type="search"
+              placeholder="Enter a city.."
+              required
+              class="search-input"
+              id="search-input"
+            />
+            <input type="submit" value="Search" class="search-button" />
+          </form>
+        </header>
+        <main>
+          <div class="current-weather">
+            <div>
+              <h1 class="current-city" id="current-city">Manila</h1>
+              <p class="current-details">
+                <span id="time"></span>, <span id="description"></span>
+                <br />
+                Humidity: <strong id="humidity"></strong>, Wind:
+                <strong id="wind-speed"></strong>
+              </p>
             </div>
-            <div class="current-temperature" id="temperature"></div>
-            <div class="current-temperature-unit">°C</div>
+            <div class="temperature-container">
+              <div id="icon">
+                <img
+                  src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png"
+                  class="weather-app-icon"
+                />
+              </div>
+              <div class="current-temperature" id="temperature"></div>
+              <div class="current-temperature-unit">°C</div>
+            </div>
           </div>
-        </div>
-        <div class="weather-forecast" id="forecast"></div>
-      </main>
+          <div class="weather-forecast" id="forecast"></div>
+        </main>
+      </div>
+      <footer>
+        <p class="footer-links">
+          This project was coded by
+          <a href="mailto:dlpcardenas@gmail.com" target="_blank"
+            >Dianne Louise</a
+          >, is open-sourced on
+          <a href="https://github.com/yan-codes/weather-proj" target="_blank"
+            >Git-hub</a
+          >
+          and hosted on
+          <a href="https://mermaid-weather.netlify.app" target="_blank"
+            >Netlify</a
+          >
+        </p>
+      </footer>
     </div>
-    <footer>
-      <p class="footer-links">
-        This project was coded by
-        <a href="mailto:dlpcardenas@gmail.com" target="_blank">Dianne Louise</a
-        >, is open-sourced on
-        <a href="https://github.com/yan-codes/weather-proj" target="_blank"
-          >Git-hub</a
-        >
-        and hosted on
-        <a href="https://mermaid-weather.netlify.app" target="_blank"
-          >Netlify</a
-        >
-      </p>
-    </footer>
   </body>
   <script src="src/index.js"></script>
 </html>
