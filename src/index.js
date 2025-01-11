@@ -69,24 +69,24 @@ function getForecast(city) {
 }
 
 function displayForecast(response) {
-  let forecastHtml = "";
+  let forecastHtml = `<div class="row">`;
 
   response.data.daily.forEach(function (day, index) {
     if (index < 5) {
       forecastHtml =
         forecastHtml +
-        `<div class="weather-forecast-day">
+        `<div class="col">
           <div class="weather-forecast-date">${formatDay(day.time)}</div>
 
           <img src="${day.condition.icon_url}" class="weather-forecast-icon"/>
           <div class="weather-forecast-temperatures">
-            <div class="weather-forecast-temperature">
-              <strong>${Math.round(day.temperature.maximum)}°</strong>
-            </div>
-            <div class="weather-forecast-temperature">${Math.round(
+            <span class="weather-forecast-temperature-max">
+              <strong> ${Math.round(day.temperature.maximum)}° </strong>
+            </span>
+            <span class="weather-forecast-temperature-min"><strong>  ${Math.round(
               day.temperature.minimum
             )}°
-            </div>
+             </strong></span>
           </div>
         </div>
     `;
